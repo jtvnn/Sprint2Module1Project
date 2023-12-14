@@ -1,0 +1,89 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <style>
+          .sections {
+            border: 1px solid green;
+            margin: 10px;
+            padding: 10px;
+          }
+        </style>
+      </head>
+      <body>
+        <header>
+          <h3>Alan Turing Mini-Biography</h3>
+          <aside>
+            <figure>
+              <img src = "https://assets-global.website-files.com/616e7bd6ab5a089243ca2fcf/6385fab6ef5911d413a4849d_Alan%20Turing%20The%20Once%20Obscure%20Father%20of%20Computer%20Science.png" alt = "Alan Turing picture">
+              <figcaption>Fig.1 - Turing and the machine!</figcaption>
+            `</figure>
+          </aside>
+          <nav>
+            <a href="#overview">Overview</a>
+            <a href="#career">Career</a>
+            <a href="#awards">Awards</a>
+            <a href="#contact-us">Contact Us</a>
+          </nav>
+        </header>
+        <section id="overview" class="sections">
+          <h3>Overview</h3>
+          <p>Alan Mathison Turing (June 23, 1912 - June 7, 1954) was an English mathematician, computer scientist, among other things. He is considered to be the father of theoretical computer science and artificial intelligence.</p>
+        </section>
+        <section id="career" class="sections">
+          <h3>Career Known Fors</h3>
+          <ul>
+            <li>Cryptoanalysis of the Enigma</li>
+            <li>Turing's proof</li>
+            <li>Turing's test</li>
+            <li>The Chemical Basis of Morphogenesis</li>
+          </ul>
+        </section>
+        <section id="awards" class="sections">
+          <h3>Awards</h3>
+          <p>The Turing Award is recognized as the "highest distinction in computer science". Some also call it the "Nobel Prize of Computing. From 2007 to 2013, the award was accompanied by a prize of $250,000. Effective 2014, the funding level has been increased to $1 million, i.e. four times the previous amount.</p>
+        </section>
+
+        <footer id="contact-us">
+          <form>
+            <label for="firstName">Email:</label>
+            <input type="text" id="firstName" name="firstName"><br><br>
+            <label for="lastName">Message:</label>
+            <input type="text" id="lastName" name="lastName"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+        </footer>
+      </body>
+    </html>
